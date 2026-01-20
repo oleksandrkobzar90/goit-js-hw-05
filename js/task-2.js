@@ -1,8 +1,6 @@
 'use strict';
 const getUsersWithFriend = (users, friendName) =>
-  users
-    .filter(user => user.friends.includes(friendName))
-    .map(user => user.name);
+  users.filter(user => user.friends.includes(friendName));
 
 const allUsers = [
   {
